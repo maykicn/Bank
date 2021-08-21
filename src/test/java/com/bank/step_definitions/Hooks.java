@@ -13,19 +13,16 @@ import java.util.concurrent.TimeUnit;
 public class Hooks {
 
     @Before
-    public void setUp(){
-        System.out.println("\tthis is coming from BEFORE");
-
+    public void setUp() {
         Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Driver.get().manage().window().maximize();
-
     }
 
     @After
-    public void tearDown(Scenario scenario){
-        if(scenario.isFailed()){
+    public void tearDown(Scenario scenario) {
+        if (scenario.isFailed()) {
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot,"image/png","screenshot");
+            scenario.attach(screenshot, "image/png", "screenshot");
         }
 
         BrowserUtils.waitForPageToLoad(5);
@@ -34,13 +31,13 @@ public class Hooks {
     }
 
     @Before("@db")
-    public void setUpdb(){
+    public void setUpdb() {
 
         System.out.println("\tthis is coming from BEFORE db");
     }
 
     @After("@db")
-    public void closeDb(){
+    public void closeDb() {
         System.out.println("\tthis is coming from AFTER db");
     }
 

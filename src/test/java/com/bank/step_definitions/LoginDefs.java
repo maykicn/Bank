@@ -1,5 +1,6 @@
 package com.bank.step_definitions;
 
+import com.bank.pages.AccountActivityPage;
 import com.bank.pages.LoginPage;
 import com.bank.pages.HomePage;
 import com.bank.utilities.BrowserUtils;
@@ -24,7 +25,10 @@ public class LoginDefs {
             loginPage.logInBttn.click();
             loginPage.advancedBttn.click();
             loginPage.proceedLink.click();
-
+            BrowserUtils.waitForPageToLoad(5);
+        }else if(icon.equals("Account Activity")){
+            new AccountActivityPage().accountActivityTab.click();
+            BrowserUtils.waitForPageToLoad(5);
         }
 
     }
@@ -38,7 +42,6 @@ public class LoginDefs {
     @Then("verify that {string} page is displayed")
     public void verify_that_page_is_displayed(String expectedTitle) {
         String actualTitle = Driver.get().getTitle();
-        BrowserUtils.waitForPageToLoad(5);
         Assert.assertEquals(expectedTitle,actualTitle);
     }
 
