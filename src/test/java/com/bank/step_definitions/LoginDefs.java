@@ -3,6 +3,7 @@ package com.bank.step_definitions;
 import com.bank.pages.AccountActivityPage;
 import com.bank.pages.LoginPage;
 import com.bank.pages.HomePage;
+import com.bank.pages.PayBillsPage;
 import com.bank.utilities.BrowserUtils;
 import com.bank.utilities.Driver;
 import io.cucumber.java.en.Then;
@@ -28,6 +29,13 @@ public class LoginDefs {
             BrowserUtils.waitForPageToLoad(5);
         }else if(icon.equals("Account Activity")){
             new AccountActivityPage().accountActivityTab.click();
+            BrowserUtils.waitForPageToLoad(5);
+
+        }else if(icon.equals("Pay Bills")){
+            new PayBillsPage().payBillsTab.click();
+            BrowserUtils.waitForPageToLoad(5);
+        }else if(icon.equals("pay")){
+            new PayBillsPage().payBttn.click();
             BrowserUtils.waitForPageToLoad(5);
         }
 

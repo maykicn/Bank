@@ -27,7 +27,7 @@ Feature: Account Activity Page
       | Credit Card |
       | Brokerage   |
 
-  @wip
+
   Scenario Outline: Transactions table should have column names Date, Description, Deposit,Withdrawal.
     Then verify that Show Transactions table has "<column>"
 
