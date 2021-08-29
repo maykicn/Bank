@@ -35,7 +35,7 @@ Feature: Find Transactions in Account Activity
       | OFFICE      |
 
 
-  Scenario:
+  Scenario:Search description
     And the user accesses the Find Transactions tab
     When the user enters description "OFFICE"
     And click "find"
