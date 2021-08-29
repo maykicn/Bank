@@ -1,9 +1,9 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,22 +11,22 @@
         "steps": [
           {
             "result": {
-              "duration": 4206806600,
+              "duration": 2227482500,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "the user is on the home page",
             "match": {
               "location": "com.bank.step_definitions.MainDefs.the_user_is_on_the_home_page()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 352234600,
+              "duration": 279874700,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "click \"signin\"",
             "match": {
               "arguments": [
@@ -41,165 +41,10 @@
           },
           {
             "result": {
-              "duration": 294196600,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "enter valid credentials",
-            "match": {
-              "location": "com.bank.step_definitions.LoginDefs.enter_valid_credentials()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2622749500,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "click \"sign in\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sign in\"",
-                  "offset": 6
-                }
-              ],
-              "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-23T21:59:47.449Z",
-        "before": [
-          {
-            "result": {
-              "duration": 7087727500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.bank.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "Savings account redirect",
-        "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;savings-account-redirect",
-        "after": [
-          {
-            "result": {
-              "duration": 1638093500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.bank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1644097500,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the user clicks on \"Savings\" link on the Account Summary page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Savings\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.bank.step_definitions.AccountActivityNavigationDefs.the_user_clicks_on_link_on_the_Account_Summary_page(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 17010600,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the Account Activity page should be displayed",
-            "match": {
-              "location": "com.bank.step_definitions.AccountActivityNavigationDefs.the_Account_Activity_page_should_be_displayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 170113900,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Account drop down should have \"Savings\" selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Savings\"",
-                  "offset": 30
-                }
-              ],
-              "location": "com.bank.step_definitions.AccountActivityNavigationDefs.account_drop_down_should_have_selected(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2896358900,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user is on the home page",
-            "match": {
-              "location": "com.bank.step_definitions.MainDefs.the_user_is_on_the_home_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 323484800,
+              "duration": 188124700,
               "status": "passed"
             },
             "line": 6,
-            "name": "click \"signin\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"signin\"",
-                  "offset": 6
-                }
-              ],
-              "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 150100900,
-              "status": "passed"
-            },
-            "line": 7,
             "name": "enter valid credentials",
             "match": {
               "location": "com.bank.step_definitions.LoginDefs.enter_valid_credentials()"
@@ -208,10 +53,10 @@
           },
           {
             "result": {
-              "duration": 4312937000,
+              "duration": 3227144300,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "click \"sign in\"",
             "match": {
               "arguments": [
@@ -223,15 +68,33 @@
               "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 731486600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click \"Account Activity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account Activity\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-08-23T22:00:05.603Z",
+        "start_timestamp": "2021-08-29T10:58:26.564Z",
         "before": [
           {
             "result": {
-              "duration": 3782449000,
+              "duration": 2682765500,
               "status": "passed"
             },
             "match": {
@@ -239,14 +102,13 @@
             }
           }
         ],
-        "line": 17,
-        "name": "Brokerage account redirect",
+        "line": 55,
+        "name": "Type",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;brokerage-account-redirect",
+        "id": "find-transactions-in-account-activity;type",
         "after": [
           {
             "result": {
-              "duration": 950552000,
               "status": "passed"
             },
             "match": {
@@ -259,540 +121,177 @@
         "steps": [
           {
             "result": {
-              "duration": 738766900,
+              "duration": 74048000,
               "status": "passed"
             },
-            "line": 18,
-            "name": "the user clicks on \"Brokerage\" link on the Account Summary page",
+            "line": 56,
+            "name": "the user accesses the Find Transactions tab",
+            "match": {
+              "location": "com.bank.step_definitions.FindTransactionsDefs.the_user_accesses_the_Find_Transactions_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172564400,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "click \"find\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Brokerage\"",
-                  "offset": 19
+                  "val": "\"find\"",
+                  "offset": 6
                 }
               ],
-              "location": "com.bank.step_definitions.AccountActivityNavigationDefs.the_user_clicks_on_link_on_the_Account_Summary_page(java.lang.String)"
+              "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 15010400,
+              "duration": 1035592500,
               "status": "passed"
             },
-            "line": 19,
-            "name": "verify that \"Zero - Account Activity\" page is displayed",
+            "line": 58,
+            "name": "results table should show at least one result under \"Deposit\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Zero - Account Activity\"",
-                  "offset": 12
+                  "val": "\"Deposit\"",
+                  "offset": 52
                 }
               ],
-              "location": "com.bank.step_definitions.LoginDefs.verify_that_page_is_displayed(java.lang.String)"
+              "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 144206700,
+              "duration": 1051584600,
               "status": "passed"
             },
-            "line": 20,
-            "name": "Account drop down should have \"Brokerage\" selected",
+            "line": 59,
+            "name": "results table should show at least one result under \"Withdrawal\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Brokerage\"",
-                  "offset": 30
+                  "val": "\"Withdrawal\"",
+                  "offset": 52
                 }
               ],
-              "location": "com.bank.step_definitions.AccountActivityNavigationDefs.account_drop_down_should_have_selected(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3046262400,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user is on the home page",
-            "match": {
-              "location": "com.bank.step_definitions.MainDefs.the_user_is_on_the_home_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 317247500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "click \"signin\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"signin\"",
-                  "offset": 6
-                }
-              ],
-              "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 183122200,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "enter valid credentials",
-            "match": {
-              "location": "com.bank.step_definitions.LoginDefs.enter_valid_credentials()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2399498000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "click \"sign in\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sign in\"",
-                  "offset": 6
-                }
-              ],
-              "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-23T22:00:18.930Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1410573700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.bank.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": "Checking account redirect",
-        "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;checking-account-redirect",
-        "after": [
-          {
-            "result": {
-              "duration": 824647100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.bank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 734610300,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "the user clicks on \"Checking\" link on the Account Summary page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Checking\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.bank.step_definitions.AccountActivityNavigationDefs.the_user_clicks_on_link_on_the_Account_Summary_page(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7004700,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "verify that \"Zero - Account Activity\" page is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Zero - Account Activity\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.bank.step_definitions.LoginDefs.verify_that_page_is_displayed(java.lang.String)"
+              "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 115493600,
+              "duration": 194366300,
               "status": "passed"
             },
-            "line": 25,
-            "name": "Account drop down should have \"Checking\" selected",
+            "line": 60,
+            "name": "user selects type \"Deposit\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Checking\"",
-                  "offset": 30
+                  "val": "\"Deposit\"",
+                  "offset": 18
                 }
               ],
-              "location": "com.bank.step_definitions.AccountActivityNavigationDefs.account_drop_down_should_have_selected(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2788141500,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user is on the home page",
-            "match": {
-              "location": "com.bank.step_definitions.MainDefs.the_user_is_on_the_home_page()"
+              "location": "com.bank.step_definitions.FindTransactionsDefs.user_selects_type(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 308294800,
+              "duration": 1029522900,
               "status": "passed"
             },
-            "line": 6,
-            "name": "click \"signin\"",
+            "line": 61,
+            "name": "results table should show at least one result under \"Deposit\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"signin\"",
-                  "offset": 6
+                  "val": "\"Deposit\"",
+                  "offset": 52
                 }
               ],
-              "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 159103700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "enter valid credentials",
-            "match": {
-              "location": "com.bank.step_definitions.LoginDefs.enter_valid_credentials()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2437777700,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "click \"sign in\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sign in\"",
-                  "offset": 6
-                }
-              ],
-              "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-23T22:00:27.981Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1356806800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.bank.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 27,
-        "name": "Credit Card account redirect",
-        "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;credit-card-account-redirect",
-        "after": [
-          {
-            "result": {
-              "duration": 691860400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.bank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 637559800,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "the user clicks on \"Credit Card\" link on the Account Summary page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Credit Card\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.bank.step_definitions.AccountActivityNavigationDefs.the_user_clicks_on_link_on_the_Account_Summary_page(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 11264300,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "verify that \"Zero - Account Activity\" page is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Zero - Account Activity\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.bank.step_definitions.LoginDefs.verify_that_page_is_displayed(java.lang.String)"
+              "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 133022800,
+              "duration": 1062552400,
               "status": "passed"
             },
-            "line": 30,
-            "name": "Account drop down should have \"Credit Card\" selected",
+            "line": 62,
+            "name": "results table should show no result under \"Withdrawal\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Credit Card\"",
-                  "offset": 30
+                  "val": "\"Withdrawal\"",
+                  "offset": 42
                 }
               ],
-              "location": "com.bank.step_definitions.AccountActivityNavigationDefs.account_drop_down_should_have_selected(java.lang.String)"
+              "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_no_result_under(java.lang.String)"
             },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
+            "keyword": "But "
+          },
           {
             "result": {
-              "duration": 2994998300,
+              "duration": 184696800,
               "status": "passed"
             },
-            "line": 5,
-            "name": "the user is on the home page",
+            "line": 63,
+            "name": "user selects type \"Withdrawal\"",
             "match": {
-              "location": "com.bank.step_definitions.MainDefs.the_user_is_on_the_home_page()"
+              "arguments": [
+                {
+                  "val": "\"Withdrawal\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.bank.step_definitions.FindTransactionsDefs.user_selects_type(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 305203500,
+              "duration": 1016820200,
               "status": "passed"
             },
-            "line": 6,
-            "name": "click \"signin\"",
+            "line": 64,
+            "name": "results table should show at least one result under \"Withdrawal\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"signin\"",
-                  "offset": 6
+                  "val": "\"Withdrawal\"",
+                  "offset": 52
                 }
               ],
-              "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 208139300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "enter valid credentials",
-            "match": {
-              "location": "com.bank.step_definitions.LoginDefs.enter_valid_credentials()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2556704700,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "click \"sign in\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sign in\"",
-                  "offset": 6
-                }
-              ],
-              "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-23T22:00:36.516Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1416463600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.bank.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 32,
-        "name": "Loan account redirect",
-        "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;loan-account-redirect",
-        "after": [
-          {
-            "result": {
-              "duration": 781520900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.bank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 695463900,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "the user clicks on \"Loan\" link on the Account Summary page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Loan\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.bank.step_definitions.AccountActivityNavigationDefs.the_user_clicks_on_link_on_the_Account_Summary_page(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 10007100,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "verify that \"Zero - Account Activity\" page is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Zero - Account Activity\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.bank.step_definitions.LoginDefs.verify_that_page_is_displayed(java.lang.String)"
+              "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 138091300,
+              "duration": 1032285800,
               "status": "passed"
             },
-            "line": 35,
-            "name": "Account drop down should have \"Loan\" selected",
+            "line": 65,
+            "name": "results table should show no result under \"Deposit\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Loan\"",
-                  "offset": 30
+                  "val": "\"Deposit\"",
+                  "offset": 42
                 }
               ],
-              "location": "com.bank.step_definitions.AccountActivityNavigationDefs.account_drop_down_should_have_selected(java.lang.String)"
+              "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_no_result_under(java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "But "
           }
         ],
         "tags": [
@@ -802,20 +301,11 @@
         ]
       }
     ],
-    "name": "Navigating to specific accounts in Accounts Activity",
+    "name": "Find Transactions in Account Activity",
     "description": "",
-    "id": "navigating-to-specific-accounts-in-accounts-activity",
+    "id": "find-transactions-in-account-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AccountActivityNavigation.feature",
-    "tags": [
-      {
-        "name": "@wip",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/FindTransactions.feature",
+    "tags": []
   }
 ]
