@@ -51,7 +51,7 @@ Feature: Find Transactions in Account Activity
     And click "find"
     Then results table should only show descriptions containing "ONLINE"
 
-  @wip
+
   Scenario: Type
     And the user accesses the Find Transactions tab
     When click "find"

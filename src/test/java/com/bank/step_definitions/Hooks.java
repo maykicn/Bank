@@ -26,7 +26,7 @@ public class Hooks {
         }
 
         BrowserUtils.waitForPageToLoad(5);
-        //Driver.closeDriver();
+        Driver.closeDriver();
 
     }
 

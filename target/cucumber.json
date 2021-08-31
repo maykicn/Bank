@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2227482500,
+              "duration": 2882929600,
               "status": "passed"
             },
             "line": 4,
@@ -19,11 +19,11 @@
             "match": {
               "location": "com.bank.step_definitions.MainDefs.the_user_is_on_the_home_page()"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 279874700,
+              "duration": 339554500,
               "status": "passed"
             },
             "line": 5,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 188124700,
+              "duration": 219145800,
               "status": "passed"
             },
             "line": 6,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 3227144300,
+              "duration": 4367923100,
               "status": "passed"
             },
             "line": 7,
@@ -71,15 +71,15 @@
           },
           {
             "result": {
-              "duration": 731486600,
+              "duration": 824551700,
               "status": "passed"
             },
             "line": 8,
-            "name": "click \"Account Activity\"",
+            "name": "click \"Pay Bills\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Account Activity\"",
+                  "val": "\"Pay Bills\"",
                   "offset": 6
                 }
               ],
@@ -90,11 +90,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-29T10:58:26.564Z",
+        "start_timestamp": "2021-08-31T08:22:01.631Z",
         "before": [
           {
             "result": {
-              "duration": 2682765500,
+              "duration": 2773411700,
               "status": "passed"
             },
             "match": {
@@ -102,13 +102,14 @@
             }
           }
         ],
-        "line": 55,
-        "name": "Type",
+        "line": 11,
+        "name": "Add a new payee",
         "description": "",
-        "id": "find-transactions-in-account-activity;type",
+        "id": "add-new-payee-under-pay-bills;add-a-new-payee",
         "after": [
           {
             "result": {
+              "duration": 812163800,
               "status": "passed"
             },
             "match": {
@@ -121,177 +122,71 @@
         "steps": [
           {
             "result": {
-              "duration": 74048000,
+              "duration": 87057800,
               "status": "passed"
             },
-            "line": 56,
-            "name": "the user accesses the Find Transactions tab",
+            "line": 12,
+            "name": "Add New Payee tab",
             "match": {
-              "location": "com.bank.step_definitions.FindTransactionsDefs.the_user_accesses_the_Find_Transactions_tab()"
+              "location": "com.bank.step_definitions.AddNewPayeeDefs.add_New_Payee_tab()"
             },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1063699000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "creates new payee using following information",
+            "match": {
+              "location": "com.bank.step_definitions.AddNewPayeeDefs.creates_new_payee_using_following_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Payee Name",
+                  "The Law Offices of Hyde, Price \u0026 Scharks"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee Address",
+                  "100 Same st, Anytown, USA, 10001"
+                ]
+              },
+              {
+                "cells": [
+                  "Account",
+                  "Checking"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee details",
+                  "XYZ account"
+                ]
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 172564400,
+              "duration": 54064200,
               "status": "passed"
             },
-            "line": 57,
-            "name": "click \"find\"",
+            "line": 18,
+            "name": "message The new payee \"The new payee The Law Offices of Hyde, Price \u0026 Scharks was successfully created.\" should be displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"find\"",
-                  "offset": 6
+                  "val": "\"The new payee The Law Offices of Hyde, Price \u0026 Scharks was successfully created.\"",
+                  "offset": 22
                 }
               ],
-              "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1035592500,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "results table should show at least one result under \"Deposit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Deposit\"",
-                  "offset": 52
-                }
-              ],
-              "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under(java.lang.String)"
+              "location": "com.bank.step_definitions.AddNewPayeeDefs.message_The_new_payee_should_be_displayed(java.lang.String)"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1051584600,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "results table should show at least one result under \"Withdrawal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Withdrawal\"",
-                  "offset": 52
-                }
-              ],
-              "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 194366300,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "user selects type \"Deposit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Deposit\"",
-                  "offset": 18
-                }
-              ],
-              "location": "com.bank.step_definitions.FindTransactionsDefs.user_selects_type(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1029522900,
-              "status": "passed"
-            },
-            "line": 61,
-            "name": "results table should show at least one result under \"Deposit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Deposit\"",
-                  "offset": 52
-                }
-              ],
-              "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1062552400,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "results table should show no result under \"Withdrawal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Withdrawal\"",
-                  "offset": 42
-                }
-              ],
-              "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_no_result_under(java.lang.String)"
-            },
-            "keyword": "But "
-          },
-          {
-            "result": {
-              "duration": 184696800,
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "user selects type \"Withdrawal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Withdrawal\"",
-                  "offset": 18
-                }
-              ],
-              "location": "com.bank.step_definitions.FindTransactionsDefs.user_selects_type(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1016820200,
-              "status": "passed"
-            },
-            "line": 64,
-            "name": "results table should show at least one result under \"Withdrawal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Withdrawal\"",
-                  "offset": 52
-                }
-              ],
-              "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1032285800,
-              "status": "passed"
-            },
-            "line": 65,
-            "name": "results table should show no result under \"Deposit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Deposit\"",
-                  "offset": 42
-                }
-              ],
-              "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_no_result_under(java.lang.String)"
-            },
-            "keyword": "But "
           }
         ],
         "tags": [
@@ -301,11 +196,11 @@
         ]
       }
     ],
-    "name": "Find Transactions in Account Activity",
+    "name": "Add new payee under pay bills",
     "description": "",
-    "id": "find-transactions-in-account-activity",
+    "id": "add-new-payee-under-pay-bills",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FindTransactions.feature",
+    "uri": "file:src/test/resources/features/Add%20New%20Payee.feature",
     "tags": []
   }
 ]
