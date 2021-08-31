@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FindTransactions.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/PurchaseForeignCurrency.feature");
 formatter.feature({
-  "name": "Find Transactions in Account Activity",
+  "name": "Purchase Foreign Currency",
   "description": "",
   "keyword": "Feature"
 });
@@ -14,7 +14,7 @@ formatter.before({
 });
 formatter.step({
   "name": "the user is on the home page",
-  "keyword": "Given "
+  "keyword": "When "
 });
 formatter.match({
   "location": "com.bank.step_definitions.MainDefs.the_user_is_on_the_home_page()"
@@ -53,7 +53,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click \"Account Activity\"",
+  "name": "click \"Pay Bills\"",
   "keyword": "And "
 });
 formatter.match({
@@ -63,7 +63,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Type",
+  "name": "Error message for not entering value",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -73,101 +73,31 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user accesses the Find Transactions tab",
-  "keyword": "And "
+  "name": "the user accesses the Purchase foreign currency cash tab",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "com.bank.step_definitions.FindTransactionsDefs.the_user_accesses_the_Find_Transactions_tab()"
+  "location": "com.bank.step_definitions.PurchaseForeignCurrencyDefs.the_user_accesses_the_Purchase_foreign_currency_cash_tab()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click \"find\"",
+  "name": "user tries to calculate cost without entering a value",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.bank.step_definitions.LoginDefs.click_button(java.lang.String)"
+  "location": "com.bank.step_definitions.PurchaseForeignCurrencyDefs.user_tries_to_calculate_cost_without_entering_a_value()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "results table should show at least one result under \"Deposit\"",
+  "name": "error message should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "results table should show at least one result under \"Withdrawal\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user selects type \"Deposit\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.bank.step_definitions.FindTransactionsDefs.user_selects_type(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "results table should show at least one result under \"Deposit\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "results table should show no result under \"Withdrawal\"",
-  "keyword": "But "
-});
-formatter.match({
-  "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_no_result_under(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user selects type \"Withdrawal\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.bank.step_definitions.FindTransactionsDefs.user_selects_type(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "results table should show at least one result under \"Withdrawal\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "results table should show no result under \"Deposit\"",
-  "keyword": "But "
-});
-formatter.match({
-  "location": "com.bank.step_definitions.FindTransactionsDefs.results_table_should_show_no_result_under(java.lang.String)"
+  "location": "com.bank.step_definitions.PurchaseForeignCurrencyDefs.error_message_should_be_displayed()"
 });
 formatter.result({
   "status": "passed"

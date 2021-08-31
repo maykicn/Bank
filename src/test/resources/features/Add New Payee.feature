@@ -7,7 +7,7 @@ Feature: Add new payee under pay bills
     And click "sign in"
     And click "Pay Bills"
 
-  @wip
+
   Scenario: Add a new payee
     Given Add New Payee tab
     And creates new payee using following information

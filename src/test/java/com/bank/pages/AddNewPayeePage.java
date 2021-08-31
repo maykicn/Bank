@@ -5,9 +5,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class AddNewPayeePage extends BasePage{
 
-    @FindBy(xpath = "//li[@id='pay_bills_tab']/a")
-    public WebElement payBillsTab;
-
     @FindBy(xpath = "//li[contains(a,'Add New Payee')]")
     public WebElement addNewPayeeTab;
 
